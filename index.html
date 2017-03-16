@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FISH VUE</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body class="container">
+
+    <div class="jumbotron">
+      <h1>Fish Enthusiasts</h1>
+      <p>class of '82</p>
+    </div>
+
+    <div id="fish">
+
+      <div class="fish-panel" v-for="f in allFish">
+        <h4> {{ f.getInfo() }} </h4>
+        <img :src="f.img" alt="" class="fish-img">
+      </div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

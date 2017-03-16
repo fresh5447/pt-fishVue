@@ -1,0 +1,22 @@
+body {
+  background-color: #9b59b6;
+}
+
+h1, h4, p {
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+.fish-panel {
+  border: solid 8px #3498db;
+  border-radius: 20px;
+  background-color: #ecf0f1;
+  text-align: center;
+  max-width: 30%;
+  display: inline-block;
+  margin: 5%;
+  height: 200px;
+}
+
+.fish-img {
+  max-width: 100%;
+}
